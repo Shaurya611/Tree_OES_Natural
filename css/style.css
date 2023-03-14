@@ -1,0 +1,464 @@
+/*--------------------------------------------------------------------------------------------
+* Author        : Oes Tree
+* Template Name : Oes Tree
+* File          : Main CSS file
+* Version       : 3.0
+----------------------------------------------------------------------------------------------*/
+
+/* INDEX
+----------------------------------------------------------------------------------------------
+
+01. General CSS
+02. Header CSS
+03. Section CSS
+04. Image-Gallery CSS
+05. Service CSS
+06. Footer CSS
+07. Scroll Button
+*/
+
+
+
+/* 01. General CSS Start
+----------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root{
+    /* fontfamily variables */
+    --lato: font-family: 'Lato', sans-serif;
+
+    /* color variables */
+    --primary: #482e1f;
+    --secondary: #a7bd39;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+body {
+    font-size: 14px;
+     color: var(--black);
+     margin: 0;
+     padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+::-moz-selection {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+button:focus,
+input:focus,
+img:focus,
+.slick-slide:focus,
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.transition {
+    transition: 700ms;
+}
+
+.center {
+    text-align: center;
+}
+
+/* 01. General Css End */
+
+/* 02. Header CSS start */
+
+.header-main .header-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}.logo{
+    margin-right: 20px;
+}.text-logo h3{
+    font-size: 36px;
+    font-family: var(--latorglr);
+    font-weight: 500;
+    line-height: 30px;
+}
+.text-logo span{
+    font-size: 30px;
+    color: var(--secondary);
+    line-height: 30px;
+    font-family: var(--lato);
+    font-weight: 400;
+    display: inline-block;
+}
+.company-logo{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-logo img{
+    max-width: 100%;
+    margin-right: 20px;
+}
+.header-contact{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header-contact a{
+    display: block;
+    text-decoration: none;
+}
+.header-contact a:first-child{
+    color: var(--black);
+    font-family: var(--lato);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+.header-contact a:last-child{
+    color: var(--secondary);
+    font-family: var(--lato);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+.header-menu{
+    background-color: var(--primary);
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-menu .menu-items{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+.header-menu .menu-items li{
+    list-style: none;
+    padding: 10px 30px;
+    text-align: center;
+}
+.header-menu .menu-items li a{
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+    font-size: 20px;
+    font-family: var(--lato);
+    font-weight: 400;
+    transition: all 0.5s;
+}
+.header-menu .menu-items li a:hover{
+    color: var(--secondary);
+}
+.header-menu .fb-icon a{
+    font-size: 35px;
+    color: #1877f2;
+    display: block;
+    padding: 0 5px;
+}
+/* 02. Header CSS end */
+
+/* 03. Section css start */
+.main-content{
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main-content .content-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.content-heading h1:first-child{
+    color: var(--secondary);
+    font-family: var(--lato);
+    font-weight: 700;
+    margin-right: 10px;
+    font-size: 32px;
+}
+.content-heading h1:last-child{
+    font-size: 32px;
+    color: var(--black);
+    font-family: var(--lato);
+    font-weight: 700;
+}
+.content{
+    margin-bottom: 30px;
+}
+.content p{
+    font-size: 20px;
+    font-family: var(--lato);
+    font-weight: 400;
+    text-align: center;
+}
+.content-callus span{
+    font-size: 24px;
+    text-align: center;
+    color: #e91919;
+    font-family: var(--lato);
+    font-weight: 400;
+}
+.content-callus span a{
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    color: #e91919;
+    font-family: var(--lato);
+    font-weight: 400;
+}
+/* 03. Section css end */
+
+/* 04. Image-gallery css start */
+.image-gallery{
+    background-color: #efefef;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    padding: 0 30px;
+}
+
+/* 04. Image-gallery css end */
+
+/* 05. Service css start */
+.services{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.service-content{
+    width: 50%;
+    margin-right: 60px;
+    margin-left: 180px;
+}
+.service-content p{
+    font-size: 20px;
+    font-family: var(--lato);
+    font-weight: 400;
+    text-align: justify;
+}
+.service-content p:first-child{
+    margin-bottom: 30px;
+}
+.service-list{
+    background-color: var(--primary);
+    width: 50%;
+    padding: 20px 20px;
+    margin-right: 145px;
+    width: 445px;
+}
+.service-list h3{
+    font-size: 26px;
+    font-family: var(--lato);
+    font-weight: 700;
+    color: var(--secondary);
+}
+.service-list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.service-list ul li{
+    font-size: 20px;
+    font-family: var(--lato);
+    font-weight: 400;
+    color: var(--white);
+    padding: 8px 0;
+}
+.service-list ul li::before{
+    content: "\f058";
+    font-family: "fontAwesome";
+    color: var(--secondary);
+    margin-right: 11px;
+    font-size: 25px;
+    vertical-align: text-top;
+}
+/* 05. Service css start */
+
+/* 06. Footer CSS start */
+footer{
+    background-color: var(--secondary);
+}
+.footer-heading{
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+.footer-heading p{
+    text-align: center;
+    font-family: var(--lato);
+    font-weight: 400;
+    font-size: 28px;
+}
+.footer-heading p:last-child{
+    color: var(--white);
+    margin-top: 12px;
+}
+.footer-contact span{
+    display: block;
+    text-align: center;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--lato);
+    font-weight: 400;
+}
+.footer-contact span a{
+    text-decoration: none;
+    color: var(--black);
+}
+.footer-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-buttons .btn1{
+    background-color: var(--primary);
+    margin-right: 25px;
+}
+.footer-buttons .btn2{
+    background-color: var(--white);
+}
+.btn1, .btn2{
+    border: none;
+    font-size: 22px;
+    font-family: var(--lato);
+    font-weight: 700;
+    width: 250px;
+    height: 45px;
+    cursor: pointer;
+    
+}
+.btn1:hover{
+    background-color: var(--white);
+}
+.btn2:hover{
+    background-color: var(--primary);
+}
+.btn1 i, .btn2 i{
+    margin-left: 7px;
+    vertical-align: text-bottom;
+}
+.footer-image{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-image img{
+    margin-right: 20px;
+}
+.footer-links{
+    margin-top: 15px;
+}
+.footer-links .f-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .footer-links .f-menu li{
+    padding: 0 5px;
+} */
+.footer-links .f-menu li a{
+    display: block;
+    text-decoration: none;
+    color: var(--primary);
+    font-family: var(--lato);
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    padding: 0 5px;
+}
+.footer-links .f-menu li a:hover{
+    color: var(--white);
+}
+.footer-links .f-menu li a::before{
+    content: "|";
+    color: var(--primary);
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+    width: 2px;
+}
+.footer-links .f-menu li:last-child a::before{
+    display: none;
+}
+/* 06. Footer CSS end */
+
+/*07. scroll button css start */
+#scroll{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#scroll:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    
+}
+/*07. scroll button css end */
